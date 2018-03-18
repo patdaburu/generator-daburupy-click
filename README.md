@@ -48,10 +48,10 @@ If you haven't already installed  [Bower](https://bower.io/), perform the follow
 npm install -g bower
 ```
 
-## Install the `daburupy` Generator
+## Install the `daburupy-click` Generator
 
 ```bash
-npm install -g generator-daburupy
+npm install -g generator-daburupy-click
 ```
 
 ## Create Your Project
@@ -60,7 +60,7 @@ From a command prompt go into the directory in which you'd love to start your ne
 
 ```bash
 cd /my/target/directory
-yo daburupy
+yo daburupy-click
 ```
 
 The generator will ask you a few questions and, based on your answers, generate your new project.

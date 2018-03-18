@@ -10,8 +10,8 @@ module.exports = class extends Generator {
     this.log(
       yosay(
         `${chalk.red(
-          'generator-daburupy'
-        )} will help you get this python project started!`
+          'generator-daburupy-click'
+        )} will help you get this python CLI project started!`
       )
     );
 
