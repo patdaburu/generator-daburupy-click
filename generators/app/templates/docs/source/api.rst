@@ -14,9 +14,9 @@ API Documentation
     :undoc-members:
     :show-inheritance:
 
-<%= uldash %>____
+<%= uldash %>----
 <%= projectName %>.cli
-<%= uldash %>____
+<%= uldash %>----
 .. automodule:: <%= projectName %>.cli
     :members:
     :undoc-members:
