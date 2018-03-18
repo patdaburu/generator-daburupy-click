@@ -144,4 +144,20 @@ module.exports = class extends Generator {
   install() {
     this.installDependencies();
   }
+
+  end() {
+    // Have Yeoman greet the user.
+    this.log(
+      yosay(
+        `${chalk.green(
+          'Ready to go!'
+        )} You can get started by running the commands below.  Have fun!`
+      )
+    );
+    this.log(`${chalk.green('make venv')}`);
+    this.log(`${chalk.green('source venv/bin/activate')}`);
+    this.log(`${chalk.green('make install')}`);
+    this.log(`${chalk.green('make make build')}`);
+    this.log(`${chalk.green(this.props.projectName + ' --help')}`);
+  }
 };
