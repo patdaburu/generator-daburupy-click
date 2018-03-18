@@ -1,5 +1,5 @@
-# generator-daburupy
-`daburupy` a [Yeoman](http://yeoman.io) generator for a basic python project that includes pytest, [Sphinx](http://www.sphinx-doc.org/en/master/), a `Makefile` and a few other standard pieces to get your project going.
+# generator-daburupy-click
+`daburupy-click` a [Yeoman](http://yeoman.io) generator for a basic python command-line project using [Click](http://click.pocoo.org/5/) that includes pytest, [Sphinx](http://www.sphinx-doc.org/en/master/), a `Makefile` and a few other standard pieces to get your project going.
 
 If you haven't used yeoman templates before, take a look at the [Getting Started with Yeoman](http://yeoman.io/learning/) article on the project page.
 
@@ -85,6 +85,24 @@ make install
 make test
 make docs
 ```
+
+## Build and Run the Application
+
+This template includes some starter code for your [Click](http://click.pocoo.org/5/) application, and you should be able to build and run it at this point.
+
+To *install* the application into your virtual environment, you can use the `Makefile`.
+
+```bash
+make build
+```
+
+At this point, you should have an executable that is the same as your project's name.  To verify it's good to go, run it with the `--help` flag.
+
+```
+<my-project-name> --help
+```
+
+
 
 ## Start Coding
 
