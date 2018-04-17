@@ -1,6 +1,6 @@
 {
   "name": "generator-daburupy-click",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description":
     "This is a generator for a basic python command-line project using Click.",
   "homepage": "https://github.com/patdaburu/generator-daburupy-click",

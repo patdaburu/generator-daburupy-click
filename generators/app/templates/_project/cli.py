@@ -13,10 +13,10 @@ This is the entry point for the command-line interface (CLI) application.
     also a very helpful `tutorial video <https://www.youtube.com/watch?v=kNke39OZ2k0>`_.
 """
 
-import click
 import os
 from pathlib import Path
 from typing import TextIO
+import click
 
 
 class Info(object):
@@ -28,8 +28,8 @@ class Info(object):
         self.home_directory: os.PathLike = None
 
 
-pass_info = click.make_pass_decorator(Info, ensure=True)  \
-    #: a decorator for functions that pass 'Info' objects
+# pass_info is a decorator for functions that pass 'Info' objects.
+pass_info = click.make_pass_decorator(Info, ensure=True) #: pylint: disable=invalid-name
 
 
 @click.group()
@@ -70,5 +70,5 @@ def greet(info: Info, string: str, repeat: int, out: TextIO):
     if info.verbose:
         click.echo("'greet' is running in verbose mode.")
     click.echo('Home directory is {}'.format(info.home_directory))
-    for i in range(0, repeat):
+    for _ in range(0, repeat):
         click.echo('Hello {}!'.format(string), file=out)
